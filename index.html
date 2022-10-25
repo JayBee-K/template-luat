@@ -1,57 +1,316 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Template Nencer</title>
-    <meta name="description" content="Template Nencer">
-    <meta name="author" content="">
+	<title>Template Nencer</title>
+	<meta name="description" content="Template Nencer">
+	<meta name="author" content="">
 
-    <meta property="og:title" content="Template Nencer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="Template Cpanel">
-    <meta property="og:image" content="">
+	<meta property="og:title" content="Template Nencer">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Cpanel">
+	<meta property="og:image" content="">
 
-    <link rel="icon" href="/assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+		  rel="stylesheet">
 
-    <style>
-        :root {
-            --primary-color: #DA2419;
-            --primary-hover: #c21c12;
-            --primary-rgb: 218, 36, 25;
 
-            --secondary-color: #0C5FA6;
-            --secondary-hover: #1E8EE8;
-            --secondary-rgb: 12, 95, 166;
-        }
-    </style>
+	<link rel="icon" href="/assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="/assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancyBox/jquery.fancybox.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+
+	<style>
+		:root {
+			--primary-color: #DA2419;
+			--primary-hover: #c21c12;
+			--primary-rgb: 218, 36, 25;
+
+			--secondary-color: #0C5FA6;
+			--secondary-hover: #1E8EE8;
+			--secondary-rgb: 12, 95, 166;
+		}
+	</style>
 </head>
 <body>
 
 <div id="header" class="header">
-    <div id="header-overlay" class="header-overlay"></div>
+	<div id="header-overlay" class="header-overlay"></div>
 </div>
 <div id="main" class="main">
-    <div class="section-service section-gap">
-        <div class="container">
-            <div class="section-heading">
-                <div class="title">
-                    Dịch vụ cho khách hàng doanh nghiệp
-                </div>
-                <span class="decor"><span></span></span>
-            </div>
-        </div>
-    </div>
+	<div class="section-banner slider-theme" id="slider-banner">
+		<div class="swiper">
+			<div class="swiper-wrapper h-auto">
+				<div class="swiper-slide h-auto">
+					<div class="banner-image background-cover"
+						 style="background-image: url('./assets/images/banner/1.jpg')"></div>
+				</div>
+				<div class="swiper-slide h-auto">
+					<div class="banner-image background-cover"
+						 style="background-image: url('./assets/images/banner/2.jpg')"></div>
+				</div>
+				<div class="swiper-slide h-auto">
+					<div class="banner-image background-cover"
+						 style="background-image: url('./assets/images/banner/1.jpg')"></div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-actions">
+			<div class="slider-theme_actions--pagination"></div>
+		</div>
+	</div>
+	<div class="section-service section-gap">
+		<div class="container">
+			<div class="section-heading">
+				<div class="title">
+					Dịch vụ cho khách hàng doanh nghiệp
+				</div>
+				<span class="decor"><span></span></span>
+			</div>
+		</div>
+	</div>
+	<div class="section-articles section-gap">
+		<div class="container">
+			<div class="section-heading">
+				<div class="title">
+					Báo chí nói về chúng tôi
+				</div>
+				<span class="decor"><span></span></span>
+			</div>
+			<div class="slider-theme" id="slider-articles">
+				<div class="swiper">
+					<div class="swiper-wrapper h-auto">
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/1.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Đà Nẵng Online | Ly hôn có yếu tố nước ngoài
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/2.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Tuổi Trẻ Thủ Đô – Dịch vụ đăng ký kinh doanh của Công ty Luật Thái An: Chất lượng và uy tín
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/1.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Đà Nẵng Online | Ly hôn có yếu tố nước ngoài
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/2.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Tuổi Trẻ Thủ Đô – Dịch vụ đăng ký kinh doanh của Công ty Luật Thái An: Chất lượng và uy tín
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/1.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Đà Nẵng Online | Ly hôn có yếu tố nước ngoài
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/2.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Tuổi Trẻ Thủ Đô – Dịch vụ đăng ký kinh doanh của Công ty Luật Thái An: Chất lượng và uy tín
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/1.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Đà Nẵng Online | Ly hôn có yếu tố nước ngoài
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="article-card card h-100 border-0 overflow-hidden position-relative bg-white">
+								<div class="card-header rounded-3 border-0 p-0 overflow-hidden position-relative bg-transparent">
+									<div class="ratio">
+										<img src="./assets/images/articles/2.jpg"
+											 class="mw-100 object-fit-cover"
+											 alt="">
+									</div>
+								</div>
+								<div class="card-body px-0">
+									<div class="card-meta d-flex align-items-center">
+										<div class="card-meta_item">
+											<i class="far fa-clock"></i>
+											25/10/2022
+										</div>
+										<div class="card-meta_item">
+											<i class="far fa-eye"></i>
+											1.020 lượt xem
+										</div>
+									</div>
+									<div class="card-title fw-bold transition-default">
+										Tuổi Trẻ Thủ Đô – Dịch vụ đăng ký kinh doanh của Công ty Luật Thái An: Chất lượng và uy tín
+									</div>
+								</div>
+								<a href="" class="stretched-link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <footer id="footer" class="footer">
@@ -59,7 +318,7 @@
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
-        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/fancyBox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>

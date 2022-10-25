@@ -15,6 +15,7 @@ body {
 	width: 100%;
 	color: var(--bs-gray-800);
 	font-size: var(--size-theme);
+	font-family: "Mulish", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	background-color: #fff;
@@ -90,4 +91,8 @@ textarea:focus {
 
 .fancybox__container {
 	z-index: 999999;
+}
+
+.bg-light_theme {
+	background-color: #fafafa;
 }
