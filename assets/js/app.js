@@ -3,6 +3,7 @@
     let windowWidth = $(window).width();
 
     let initNavigation = function () {
+        console.log(1);
         if (windowWidth < 1200) {
             $(".header .header-navigation > ul > li > ul").each(function (index) {
                 $(this).prev().attr({
