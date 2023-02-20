@@ -265,18 +265,9 @@
 }
 
 .header .header-middle .header-middle_inner .header-slogan {
-	font-size: 1.7em;
+	font-size: 1.6em;
 	font-weight: 700;
 	color: var(--primary-color);
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.header .header-middle .header-middle_inner .header-slogan > span {
-	font-size: 13px;
-	color: var(--bs-gray-700);
-	margin-top: 3px;
 }
 
 .header .header-middle .header-middle_inner .header-contact {
@@ -639,74 +630,35 @@
 	transform: translateX(70%);
 }
 
-.service-card .card-header > span {
-	-webkit-transform: translatex(-110%);
-	-moz-transform: translatex(-110%);
-	-ms-transform: translatex(-110%);
-	-o-transform: translatex(-110%);
-	transform: translatex(-110%);
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
+.service-card {
 	height: 100%;
-	background-image: linear-gradient(to right, #eee, var(--bs-white));
-	opacity: 0.5;
-	z-index: 1;
-}
-
-.service-card .card-header > span:before,
-.service-card .card-header > span:after {
-	content: "";
-	background: var(--bs-gray-800);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.service-card .card-header > span:before {
-	width: 50px;
-	height: 2px;
-}
-
-.service-card .card-header > span:after {
-	width: 2px;
-	height: 50px;
 }
 
 .service-card .card-body {
-	margin: -25px 15px 0;
 	position: relative;
 	z-index: 1;
 	padding: 0 0 10px;
+	flex: 1 1 auto;
+	margin-top: 15px;
 }
 
 .service-card .card-body .card-title {
-	padding: 15px 20px 15px 15px;
-	box-shadow: 0px 5px 5px #e7e7e7;
-	border-radius: 20px 0px 20px 0px;
+	padding: 8px 8px 8px 8px;
 	position: relative;
 	background: var(--bs-white);
 	font-size: 1.15em;
-	color: var(--bs-gray-900);
+	color: var(--primary-color);
 	line-height: 1.2;
 	margin-bottom: 0;
 	font-weight: 700;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	transition: var(--transition-default);
 	text-transform: uppercase;
+	text-align: center;
+	height: 100%;
+	border: 2px solid var(--primary-color);
 }
 
 .service-card .card-body .card-title > span {
@@ -1504,12 +1456,9 @@
 		font-size: 1.7em;
 	}
 
-	.service-card .card-body {
-		margin: 0;
-	}
 
 	.service-card .card-body .card-title {
-		font-size: 1.05em;
+		font-size: 1em;
 		border-radius: 0;
 	}
 
